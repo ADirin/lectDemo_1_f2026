@@ -22,4 +22,8 @@ Calculator calculator = new Calculator();
     void div() {
         assertEquals(6, calculator.div(12, 2));
     }
+    @org.junit.jupiter.api.Test
+    void mod() {
+        assertEquals(0, calculator.mod(12, 2));
+    }
 }

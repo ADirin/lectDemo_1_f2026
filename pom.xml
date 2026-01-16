@@ -29,6 +29,7 @@
     </dependencies>
 
     <build>
+        <finalName>lectdemo26</finalName>
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -49,6 +50,21 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>Calculator</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+
         </plugins>
     </build>
 </project>
